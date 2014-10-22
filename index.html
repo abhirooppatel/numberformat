@@ -1,0 +1,18 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Number Formatter</title>
+	</head>
+	<body ng-app="number-format-demo" ng-controller="MainCtrl as mainCtrl">
+		<form>
+			<label>Number:</label> <input number-format format-data="mainCtrl.numberData" on-value-change="mainCtrl.numberChanged()">
+		</form>
+		Data = {{mainCtrl.numberData}}
+
+		<script type="text/javascript" src="scripts/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.caret.js"></script>
+		<script type="text/javascript" src="scripts/angular.min.js"></script>
+		<script type="text/javascript" src="numberFormat.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
