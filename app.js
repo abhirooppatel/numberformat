@@ -1,10 +1,10 @@
-angular.module('number-format-demo', ['fundoo.directives'])
-	.controller('MainCtrl', [function() {
-		var self = this;
+angular.module('number-format-demo', [])
+  .controller('MainCtrl', [function() {
+    var self = this;
 
-		self.numberData = 3000;
+    self.numberData = 3000;
 
-		self.numberChanged = function() {
-			//console.log('Number changed to ',  self.numberData);
-		}
-	}]);
+    self.numberChanged = function() {
+      //console.log('Number changed to ',  self.numberData);
+    }
+  }]);
